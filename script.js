@@ -17,17 +17,12 @@ const countdown = setInterval(function() {
 
     // Display the countdown
     document.getElementById('countdown').innerHTML = `
-    <div class="countdown-item"><span>${days}</span> Days</div>
-    <div class="countdown-item"><span>${hours}</span> Hours</div>
-    <div class="countdown-item"><span>${minutes}</span> Minutes</div>
-    <div class="countdown-item"><span>${seconds}</span> Seconds</div>
+    <div>${days} Days</div>
+    <div>${hours} Hours</div>
+    <div>${minutes} Minutes</div>
+    <div>${seconds} Seconds</div>
     `;
 
-    document.querySelectorAll('.countdown-item').forEach(item => {
-        item.style.display = 'flex';
-        item.style.alignItems = 'center';
-        item.style.marginRight = '10px'; // Adjust margin as needed
-    });
 
     // If the wedding date has passed, display a message
     if (distance < 0) {

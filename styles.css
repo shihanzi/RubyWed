@@ -24,13 +24,6 @@ body {
     padding: 20px;
 }
 
-.countdown-item {
-    display: flex;
-}
-.countdown-item span {
-    margin-right: 5px; 
-}
-
 .names{
     align-items: center;
     justify-content: center;
