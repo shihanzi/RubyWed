@@ -1,0 +1,55 @@
+body {
+    background-color: pink !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+    padding: 10px;
+}
+
+.left-section {
+    width: 0%;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.countdown-item {
+    display: flex;
+}
+.countdown-item span {
+    margin-right: 5px; 
+}
+
+.names{
+    align-items: center;
+    justify-content: center;
+}
+
+#countdown {
+    /* Styles for countdown timer */
+}
+
+#slider {
+    /* Styles for slider */
+}
+
+.bride-info, .groom-info {
+    text-align: center;
+}
+
+.wedding-info {
+    text-align: center;
+}
+
+/* Additional styling as needed */
