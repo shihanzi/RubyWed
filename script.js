@@ -1,5 +1,5 @@
 // Set the wedding date
-const weddingDate = new Date('June 16, 2024 18:00:00').getTime();
+const weddingDate = new Date('June 16, 2024 11:19:00').getTime();
 
 // Update the countdown every second
 const countdown = setInterval(function() {
@@ -30,3 +30,12 @@ const countdown = setInterval(function() {
         document.getElementById('countdown').innerHTML = 'The wedding has already happened!';
     }
 }, 1000);
+
+document.getElementById('saveDateButton').addEventListener('click', function() {
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = 'webcal://https://rubiniwedding.netlify.app/assets/date.ics'; // Path to your .ics file
+    link.target = '_blank'; // Open in a new tab (optional)
+    link.click(); // Simulate click on the link
+});
+
