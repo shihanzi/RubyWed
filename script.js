@@ -34,7 +34,7 @@ const countdown = setInterval(function() {
 document.getElementById('saveDateButton').addEventListener('click', function() {
     // Create a temporary link element
     var link = document.createElement('a');
-    link.href = 'webcal://assets/date.ics'; // Path to your .ics file
+    link.href = 'https://rubiniwedding.netlify.app/assets/date.ics'; // Path to your .ics file
     link.target = '_blank'; // Open in a new tab (optional)
     link.click(); // Simulate click on the link
 });
