@@ -54,7 +54,21 @@ body {
 }
 
 #countdown {
-    /* Styles for countdown timer */
+    display: flex;
+    flex-direction: flex; /* Align children vertically */
+    align-items: center; /* Center-align children horizontally */
+    justify-content: center; /* Center content vertically if the container is taller than its content */
+    font-family: 'Arial', sans-serif; /* Change the font here */
+    padding: 20px;
+    background-color: pink; /* Example background */
+    border-radius: 5px; /* Example styling */
+    text-align: center; /* Ensure text within each div is centered */
+    color: red;
+}
+
+#countdown div{
+    padding: 5px 0; /* Add some vertical spacing between the elements */
+    font-size: 20px; /* Adjust font size as needed */
 }
 
 #slider {

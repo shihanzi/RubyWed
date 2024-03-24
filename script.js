@@ -17,9 +17,9 @@ const countdown = setInterval(function() {
 
     // Display the countdown
     document.getElementById('countdown').innerHTML = `
-    <div>${days} Days</div>
-    <div>${hours} Hours</div>
-    <div>${minutes} Minutes</div>
+    <div>${days} Days:</div>
+    <div>${hours} Hours:</div>
+    <div>${minutes} Minutes:</div>
     <div>${seconds} Seconds</div>
     `;
 
