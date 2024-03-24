@@ -21,12 +21,36 @@ body {
 .right-section{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
+.right-section img {
+    flex: 1; /* Allows the image to grow and take necessary space */
+    max-width: 50%; /* Limit the image's width to 50% of the container */
+    height: auto; /* Keep the image aspect ratio */
+  }
+
 .names{
-    align-items: center;
-    justify-content: center;
+    flex: 2; /* Allows the text to take the remaining space */
+    text-align: center; /* Center the text horizontally */
+    padding: 0 20px; /* Adds some padding around the text */
+}
+
+@media (max-width: 768px) {
+    .right-section {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .right-section img, .names {
+      max-width: 100%; /* Allow both the image and the text to take full width */
+      flex: none; /* Reset the flex grow settings */
+    }
+  
+    .names {
+      padding-top: 20px; /* Add some space between the image and the text */
+    }
 }
 
 #countdown {
@@ -44,5 +68,57 @@ body {
 .wedding-info {
     text-align: center;
 }
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px !important;
+}
+
+
+.carousel {
+    position: relative;
+    max-width: 600px; /* Adjust based on your needs */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-images .carousel-image {
+    width: 100%;
+    display: none;
+  }
+  
+  .carousel-images .active {
+    display: block;
+  }
+  
+  button.prev, button.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  button.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  button.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  button.prev:hover, button.next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
 
 /* Additional styling as needed */
