@@ -34,7 +34,7 @@ const countdown = setInterval(function() {
 document.getElementById('saveDateButton').addEventListener('click', function() {
     // Create a temporary link element
     var link = document.createElement('a');
-    link.href = 'https://rubiniwedding.netlify.app/assets/date.ics'; // Path to your .ics file
+    link.href = 'https://karunanrubaniwedding.netlify.app/assets/date.ics'; // Path to your .ics file
     link.target = '_blank'; // Open in a new tab (optional)
     link.click(); // Simulate click on the link
 });
@@ -43,6 +43,10 @@ document.getElementById('saveDateButton').addEventListener('click', function() {
 
 let slideIndex = 0;
 showSlides(slideIndex);
+
+let slideshowInterval = setInterval(function() {
+  moveSlide(1); // Move to the next slide
+}, 5000);
 
 function moveSlide(n) {
   showSlides(slideIndex += n);
@@ -58,3 +62,10 @@ function showSlides(n) {
   }
   slides[slideIndex].style.display = "block";
 }
+
+document.querySelector('.prev').addEventListener('click', function() {
+  clearInterval(slideshowInterval);
+});
+document.querySelector('.next').addEventListener('click', function() {
+  clearInterval(slideshowInterval);
+});

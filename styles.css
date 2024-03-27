@@ -1,5 +1,5 @@
 body {
-    background-color: pink !important;
+    background-color:mediumpurple !important;
 }
 
 .container {
@@ -60,10 +60,10 @@ body {
     justify-content: center; /* Center content vertically if the container is taller than its content */
     font-family: 'Arial', sans-serif; /* Change the font here */
     padding: 20px;
-    background-color: pink; /* Example background */
+    background-color: mediumpurple; /* Example background */
     border-radius: 5px; /* Example styling */
     text-align: center; /* Ensure text within each div is centered */
-    color: red;
+    color: purple;
 }
 
 #countdown div{
@@ -82,9 +82,9 @@ body {
 .wedding-info {
     text-align: center;
 }
-h1 {
+h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 90px !important;
+    font-size: 70px !important;
 }
 
 
