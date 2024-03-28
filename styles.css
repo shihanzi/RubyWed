@@ -1,138 +1,150 @@
 body {
-    background-color:mediumpurple !important;
+  background-color:mediumpurple !important;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .center {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 .left-section {
-    width: 0%;
+  width: 0%;
 }
 
 .right-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 .right-section img {
-    flex: 1; /* Allows the image to grow and take necessary space */
-    max-width: 50%; /* Limit the image's width to 50% of the container */
-    height: auto; /* Keep the image aspect ratio */
-  }
+  flex: 1; /* Allows the image to grow and take necessary space */
+  max-width: 50%; /* Limit the image's width to 50% of the container */
+  height: auto; /* Keep the image aspect ratio */
+}
 
 .names{
-    flex: 2; /* Allows the text to take the remaining space */
-    text-align: center; /* Center the text horizontally */
-    padding: 0 20px; /* Adds some padding around the text */
+flex: 2;  /*  Allows the text to take the remaining space */
+  text-align: center; /* Center the text horizontally */
+  padding: 0 20px;/*  Adds some padding around the text */
+}
+
+.img-fluid {
+max-width: 100%; /* Ensure images don't exceed container width */
 }
 
 @media (max-width: 768px) {
-    .right-section {
-      flex-direction: column; /* Stack items vertically on small screens */
-    }
-  
-    .right-section img, .names {
-      max-width: 100%; /* Allow both the image and the text to take full width */
-      flex: none; /* Reset the flex grow settings */
-    }
-  
-    .names {
-      padding-top: 20px; /* Add some space between the image and the text */
-    }
+.right-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates a two-column layout */
+  gap: 10px; /* Adds some space between the columns */
+  }
+
+  .right-section img, .names {
+    max-width: 100%; /* Allow both the image and the text to take full width */
+    width: 100%;
+    flex: none; /* Reset the flex grow settings */
+  }
+
+  .names {
+    order: 2; /* Add some space between the image and the text */
+  }
+}
+
+@media (max-width: 480px) {
+.right-section {
+  grid-template-columns: 1fr; /* Stacks items on very small screens */
+}
 }
 
 #countdown {
-    display: flex;
-    flex-direction: flex; /* Align children vertically */
-    align-items: center; /* Center-align children horizontally */
-    justify-content: center; /* Center content vertically if the container is taller than its content */
-    font-family: 'Arial', sans-serif; /* Change the font here */
-    padding: 20px;
-    background-color: mediumpurple; /* Example background */
-    border-radius: 5px; /* Example styling */
-    text-align: center; /* Ensure text within each div is centered */
-    color: purple;
+  display: flex;
+  flex-direction: flex; /* Align children vertically */
+  align-items: center; /* Center-align children horizontally */
+  justify-content: center; /* Center content vertically if the container is taller than its content */
+  font-family: 'Arial', sans-serif; /* Change the font here */
+  padding: 20px;
+  background-color: mediumpurple; /* Example background */
+  border-radius: 5px; /* Example styling */
+  text-align: center; /* Ensure text within each div is centered */
+  color: purple;
 }
 
 #countdown div{
-    padding: 5px 0; /* Add some vertical spacing between the elements */
-    font-size: 20px; /* Adjust font size as needed */
-}
-
-#slider {
-    /* Styles for slider */
+  padding: 5px 0; /* Add some vertical spacing between the elements */
+  font-size: 20px; /* Adjust font size as needed */
 }
 
 .bride-info, .groom-info {
-    text-align: center;
+  text-align: center;
 }
 
 .wedding-info {
-    text-align: center;
+  text-align: center;
 }
-h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 70px !important;
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px !important;
 }
 
+.rouge-script-regular {
+font-family: "Rouge Script", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 50px !important;
+}
 
 .carousel {
-    position: relative;
-    max-width: 600px; /* Adjust based on your needs */
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .carousel-images .carousel-image {
-    width: 100%;
-    display: none;
-  }
-  
-  .carousel-images .active {
-    display: block;
-  }
-  
-  button.prev, button.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.5);
-  }
-  
-  button.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  button.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  button.prev:hover, button.next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
+  position: relative;
+  max-width: 600px; /* Adjust based on your needs */
+  margin: auto;
+  overflow: hidden;
+}
 
-/* Additional styling as needed */
+.carousel-images .carousel-image {
+  width: 100%;
+  display: none;
+}
+
+.carousel-images .active {
+  display: block;
+}
+
+button.prev, button.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+button.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+button.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
