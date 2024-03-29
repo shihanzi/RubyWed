@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(213, 203, 235) !important;
+  background-color:rgb(236, 233, 245) !important;
 }
 
 .container {
@@ -79,6 +79,14 @@ max-width: 100%; /* Ensure images don't exceed container width */
   color: purple;
 }
 
+.countdown-container{
+ margin-bottom: 15px;
+}
+
+.hall{
+  padding: 0px 10px 0px 10px;
+}
+
 #countdown div{
   padding: 5px 0; /* Add some vertical spacing between the elements */
   font-size: 20px; /* Adjust font size as needed */
@@ -90,6 +98,9 @@ max-width: 100%; /* Ensure images don't exceed container width */
 
 .wedding-info {
   text-align: center;
+  border: solid;
+  border-color: mediumpurple;
+  padding: 7px 7px 7px 7px;
 }
 h1 {
   font-family: 'Great Vibes', cursive;
@@ -102,6 +113,14 @@ font-weight: 400;
 font-style: normal;
 font-size: 50px !important;
 }
+
+.protest-riot-regular {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px !important;
+}
+
 
 .carousel {
   position: relative;
