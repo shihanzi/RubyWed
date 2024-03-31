@@ -4,8 +4,8 @@ PRODID:-//Your Website//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:uid1@example.com
 DTSTAMP:20240101T000000Z
-DTSTART:20240616T111900Z
-DTEND:20240616T190000Z
+DTSTART;TZID=Asia/Colombo:20240616T080000
+DTEND;TZID=Asia/Colombo:20240616T140000
 SUMMARY:Wedding: Karnan Weds Rubani  
 DESCRIPTION:You are invited to celebrate the wedding of Karnan & Rubani.
 LOCATION: Srilanka Mukkulathor Cultural Hall, Colombo
