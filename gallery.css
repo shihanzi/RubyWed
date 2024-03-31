@@ -1,4 +1,7 @@
 /* Gallery grid layout */
+body {
+    background-color:rgb(236, 233, 245) !important;
+  }
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -41,3 +44,11 @@
     font-family: 'Great Vibes', cursive;
     font-size: 70px !important;
   }
+
+  h2 {
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px !important;
+  }
+
